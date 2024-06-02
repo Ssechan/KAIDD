@@ -11,6 +11,6 @@ public class HomeController {
     }
     @GetMapping("/main")
     public String main() {
-        return "main"; // 기본 경로로 접속 시 intro.html로 리다이렉트
+        return "main"; // 기본 경로로 접속 시 main.html로 리다이렉트
     }
 }

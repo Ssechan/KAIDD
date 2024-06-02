@@ -50,17 +50,25 @@ svg {
 }
 .logo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   top: 0;
   left: 63px;
   position: fixed;
   z-index: 13000;
 }
 div.logo {
+  padding-top:10px;
   align-items: center;
   font-size: 30px;
   color: #a9d18e;
   height: 60px;
+}
+span.logo {
+  position: relative;
+  top: 20px;
+  left: 0;
+  font-size: 10px;
+  color: gray;
 }
 
 .toolbar_container {
@@ -158,6 +166,7 @@ div.logo {
   height: 100%;
   position: relative;
   width: 100%;
+  overflow-y: auto;
 }
 .side_section {
   flex: 1 1;
@@ -204,8 +213,6 @@ div.logo {
   font-family: "Do Hyeon", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  padding-top: 150px;
-  padding-bottom: 150px;
 }
 .list_item:hover {
   background-color: #a9d18e;
@@ -662,7 +669,7 @@ div.logo {
   margin-bottom: 5px;
 }
 #main_zone {
-  padding-top: 300px;
+  padding-top: 100px;
   margin-bottom: 360px;
 }
 /* 강좌 */
@@ -814,7 +821,7 @@ div.logo {
   height: 250px;
 }
 .flag_bar {
-  display: none;
+  display: flex;
   position: absolute;
   top: 75px;
   left: 72.5px;
@@ -824,7 +831,7 @@ div.logo {
   background-color: #85672e;
 }
 .flag {
-  display: none;
+  display: flex;
   position: absolute;
   top: 78px;
   left: 86px;
